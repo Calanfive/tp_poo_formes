@@ -1,4 +1,6 @@
-class Carre implements Iforme {
+import { Iforme } from "./Iforme";
+
+export class Carre implements Iforme {
     private _longueurCote: number;
     public aire() : number{
        return this._longueurCote*this._longueurCote

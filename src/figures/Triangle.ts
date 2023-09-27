@@ -1,3 +1,5 @@
+import { Iforme } from "./Iforme";
+
 class Triangle implements Iforme {
     private _longueurCote: number;
     private _hauteur: number;

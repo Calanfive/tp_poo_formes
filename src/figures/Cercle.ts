@@ -1,3 +1,5 @@
+import { Iforme } from "./Iforme";
+
 class Cercle implements Iforme {
    private _rayon: number;
    
@@ -12,7 +14,7 @@ class Cercle implements Iforme {
       this._rayon = rayon
    }
 
-   
+
    public get rayon(): number {
       return this._rayon;
    }

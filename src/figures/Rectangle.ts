@@ -1,3 +1,5 @@
+import { Iforme } from "./Iforme";
+
 class Rectangle implements Iforme {
     private _longueurCote: number;
     private _largeurCote: number;
