@@ -1,29 +1,23 @@
-class Pomme {
+import { Iforme } from "./figures/Iforme";
+import { Carre } from "./figures/Carre";
+import { Cercle } from "./figures/Cercle";
+import { Rectangle } from "./figures/Rectangle";
+import { Triangle } from "./figures/Triangle";
 
-    public name: string
-    public color: string
+let carre1 : Iforme
+let triangle2 : Iforme
+let rectangle3 : Iforme
 
-    constructor(
-        name: string,
-        color: string,
-    ) {
-      console.log('Initialisation de la pomme')
-      this.name = name
-      this.color = color
-    }
+carre1 = new Carre(8);
+triangle2 = new Triangle(2, 3);
+rectangle3 = new Rectangle(4, 2);
 
-    public eat() {
-      console.log('Je mange une pomme')
-    }
+console.log("aire", carre1.aire(), "perimètre", carre1.perimetre());
+console.log("aire", triangle2.aire(), "perimètre", triangle2.perimetre());
+console.log("aire", rectangle3.aire(), "perimètre", rectangle3.perimetre());
 
-    public changeColor(newColor: string) {
-      this.color = newColor
-    }
 
-}
 
-const apple = new Pomme('Golden', 'yellow')
-apple.eat()
-apple.changeColor('red')
-console.log(apple.color)
+
+
 

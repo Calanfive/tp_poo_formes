@@ -1,6 +1,6 @@
 import { Iforme } from "./Iforme";
 
-class Triangle implements Iforme {
+export class Triangle implements Iforme {
     private _longueurCote: number;
     private _hauteur: number;
     constructor(longueurCote: number, hauteur: number) {

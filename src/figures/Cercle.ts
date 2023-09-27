@@ -1,6 +1,6 @@
 import { Iforme } from "./Iforme";
 
-class Cercle implements Iforme {
+export class Cercle implements Iforme {
    private _rayon: number;
    
    public aire() : number{
