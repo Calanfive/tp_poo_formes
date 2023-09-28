@@ -9,6 +9,8 @@ let triangle2 : Iforme
 let rectangle3 : Iforme
 
 carre1 = new Carre(8);
+carre1 = new Carre(8);
+carre1 = new Carre(8);
 triangle2 = new Triangle(2, 3);
 rectangle3 = new Rectangle(4, 2);
 

@@ -2,6 +2,12 @@ import { Iforme } from "./Iforme";
 
 export class Carre implements Iforme {
     private _longueurCote: number;
+    
+    private static cpt = 0
+
+    public static nbrNomClasse(): number{
+      return Carre.cpt ++}
+
     public aire() : number{
        return this._longueurCote*this._longueurCote
     }
@@ -11,6 +17,7 @@ export class Carre implements Iforme {
 
     constructor (longueurC : number){
         this._longueurCote = longueurC
+        Carre.cpt++
     }
 
 
